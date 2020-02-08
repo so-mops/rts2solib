@@ -29,11 +29,11 @@ expt = numpy.append(expt, numpy.arange(10, 41))
 f = FlatScript(
     eveningFlats=[
         Flat((Filters['U'],), binning=0, window='100 100 500 500'),
-        Flat((Filters['Open'],), binning=0, window='100 100 500 500'),
-        Flat((Filters['V'],), binning=0, window='100 100 500 500'),
         Flat((Filters['B'],), binning=0, window='100 100 500 500'),
+        Flat((Filters['V'],), binning=0, window='100 100 500 500'),
         Flat((Filters['R'],), binning=0, window='100 100 500 500'),
         Flat((Filters['I'],), binning=0, window='100 100 500 500'),
+        Flat((Filters['Open'],), binning=0, window='100 100 500 500'),
     ],
     maxBias=1, maxDarks=0, expTimes=expt
 )
